@@ -17,7 +17,7 @@ public class AnyWawaApplication extends Application {
         super.onCreate();
         SharePrefUtil.init(getApplicationContext());
         AnyRTCRTCPEngine.Inst().initEngineWithAnyrtcInfo(getApplicationContext(),"", "", "", "");
-        AnyRTCWaWaServer.getInstance().initAnyRTC("","","","");
+        AnyRTCWaWaServer.getInstance().initEngineWithAnyRTCInfo("","","","");
 
 
 
