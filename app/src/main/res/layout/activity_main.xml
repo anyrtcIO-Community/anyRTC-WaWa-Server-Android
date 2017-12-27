@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="org.anyrtc.wawacapture.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qr_code"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo_x"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/logo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:text="智能抓娃娃机"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/img_phone"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号"
+        android:layout_marginLeft="60dp"
+        android:visibility="invisible"
+        android:layout_marginRight="60dp"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#dae8fe"
+        android:theme="@style/MyEditText" />
+
+        <TextView
+            android:id="@+id/tv_user_phone"
+            android:layout_marginLeft="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="用户："
+            android:textColor="#ffffff"
+            android:visibility="invisible"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/et_phone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_code"
+            android:visibility="invisible"
+            android:layout_marginLeft="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/et_phone"
+          >
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/tv_send"
+                android:drawableLeft="@drawable/img_code"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:textColor="#ffffff"
+                android:textColorHint="#dae8fe"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="发送验证码"
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qr_code"
+        android:layout_below="@+id/rl_code"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_start_btn"
+        android:elevation="12dp"
+        android:translationZ="4dp"
+        android:text="开始发布"/>
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:text="技术支持：021-65650071"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</ScrollView>
