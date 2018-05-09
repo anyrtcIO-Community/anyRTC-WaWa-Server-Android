@@ -7,7 +7,7 @@
 即可。
 >3. 本demo中包含anyRTC公司RTCP实时直播SDK，需要摄像头，录音权限。
 >4. 在手机上运行可能回Crash属正常现象，需要在root后的android板上运行。
->5. 如有疑问 请联系 QQ群：580477436
+>5. 如有疑问 请联系 QQ群：554714720
 
 
 
@@ -59,3 +59,9 @@ dependencies {
     }
 }
 ```
+
+### 技术支持
+- anyRTC官方网址：[https://www.anyrtc.io](https://www.anyrtc.io/resoure)
+- QQ技术咨询群：554714720
+- 联系电话:021-65650071-816
+- Email:hi@dync.cc
